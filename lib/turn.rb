@@ -8,14 +8,13 @@ def turn(board)
   if valid_move?(board,index) == false
   # asks for input again
     puts "Not a valid move. Try again."
-    break
 
   else
   #makes valid moves
     move(board, index, char="X")
   #displays board
     display_board(board)
-  # end
+   end
   end
 
 def display_board(board)
