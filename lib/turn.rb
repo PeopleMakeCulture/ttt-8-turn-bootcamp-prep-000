@@ -27,4 +27,3 @@ def valid_position?(board,index)
     return false
   end
 end
-
