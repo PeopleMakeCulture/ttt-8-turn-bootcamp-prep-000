@@ -3,6 +3,10 @@ def turn(board)
   user_number = gets.strip
   # Call input_to_index
   index = input_to_index(user_number)
+  # validates
+  # asks for input again
+  #makes valid moves
+  display_board(board)
 
 end
 
