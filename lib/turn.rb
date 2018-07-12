@@ -7,7 +7,7 @@ def turn(board)
   # asks for input again
   #if valid_move?(board,index) == true
   #makes valid moves
-    move(board, index, char)
+    move(board, index, char="X")
   #displays board
     display_board(board)
   # end 
