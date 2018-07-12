@@ -5,12 +5,12 @@ def turn(board)
   index = input_to_index(user_number)
   # validates
   # asks for input again
-  if valid_move?(board,index) == true
+  #if valid_move?(board,index) == true
   #makes valid moves
     move(board, index, char)
   #displays board
     display_board(board)
-  end 
+  # end 
 end
 
 def display_board(board)
