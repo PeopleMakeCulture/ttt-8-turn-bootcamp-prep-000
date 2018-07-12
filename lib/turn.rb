@@ -4,14 +4,22 @@ def turn(board)
   # Call input_to_index
   index = input_to_index(user_number)
   # validates
+
+  if valid_move?(board,index) == false
   # asks for input again
-  #if valid_move?(board,index) == true
+    while valid_move?(board,index) == false
+    puts "Not a valid move. Try again."
+    puts "Please enter 1-9:"
+    user_number = gets.strip
+    index = input_to_index(user_number)
+    break
+  else
   #makes valid moves
     move(board, index, char="X")
   #displays board
     display_board(board)
   # end
-end
+  end
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
