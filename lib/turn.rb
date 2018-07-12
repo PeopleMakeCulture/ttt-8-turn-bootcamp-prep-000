@@ -12,7 +12,7 @@ def turn(board)
     puts "Please enter 1-9:"
     user_number = gets.strip
     index = input_to_index(user_number)
-    break
+  
   else
   #makes valid moves
     move(board, index, char="X")
