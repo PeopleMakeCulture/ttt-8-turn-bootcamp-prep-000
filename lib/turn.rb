@@ -20,7 +20,7 @@ def input_to_index (user_number)
 end
 
 # checks if position is empty
-def valid_position?(board,index)
+def valid_move?(board,index)
   if !(board[index] == "X" || board[index] == "O") && index < 9 && index >= 0
     return true
   else
